@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+:root {
+  font-family: 'DM Sans', sans-serif;
+  color: #f8fafc;
+  background: #08090f;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  font-optical-sizing: auto;
+  font-weight: 400;
+
+  --bg: #08090f;
+  --surface: #10111b;
+  --surface-light: #171827;
+  --border: rgba(255, 255, 255, 0.09);
+  --text: #f8fafc;
+  --muted: #9699b1;
+  --purple: #a78bfa;
+  --purple-light: #c4b5fd;
+  --green: #4ade80;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  width: 100%;
+  min-width: 0;
+  min-height: 100%;
+  overflow-x: clip;
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  width: 100%;
+  min-width: 0;
+  min-height: 100vh;
+  min-height: 100dvh;
+  overflow-x: clip;
+  background: var(--bg);
+}
+
+body,
+button,
+input {
+  font-family: 'DM Sans', sans-serif;
+}
+
+button,
+input {
+  font-size: inherit;
+}
+
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button:focus-visible,
+input:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--purple-light);
+  outline-offset: 4px;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Space Grotesk', sans-serif;
+  overflow-wrap: anywhere;
+}
+
+p {
+  overflow-wrap: anywhere;
+}
+
+::selection {
+  background: var(--purple);
+  color: #fff;
+}
+
+#root {
+  width: 100%;
+  min-width: 0;
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
